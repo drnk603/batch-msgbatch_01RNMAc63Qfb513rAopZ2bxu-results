@@ -313,10 +313,10 @@
     var forms = document.querySelectorAll('form, .c-form');
 
     var validationRules = {
-      email: /^[^s@]+@[^s@]+.[^s@]+$/,
-      phone: /^[ds+-()]{10,20}$/,
-      name: /^[a-zA-ZÀ-ÿs-']{2,50}$/,
-      date: /^d{4}-d{2}-d{2}$/
+      email: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+      phone: /^[\d\s+\-()]{10,20}$/,
+      name: /^[a-zA-ZÀ-ÿ\s\-']{2,50}$/,
+      date: /^\d{4}-\d{2}-\d{2}$/
     };
 
     var errorMessages = {
